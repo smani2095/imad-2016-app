@@ -39,7 +39,7 @@ a.button{
 }
 
 .ground{
-	background: url('/ui/madi.png');
+	color: red;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -54,26 +54,24 @@ a.button{
 	width: 230px;
 	height: 200px;
 	margin-left: -71.5px;
-	background: url('/ui/madi.png') no-repeat 0 0;
+	color: blue;
 	transition: bottom 1000ms;
 }
 
 body.body-state1 .rocket{
 	transition: none;
 }
-body.body-state2 .rocket{
 
-}
 
 body.body-state3 .rocket,
 body.body-state4 .rocket{
 	bottom: 1000px;
 	
 }
-body.body-state5 .rocket{
-
+body.body-state5 .rocket,
+body.body-state2 .rocket{
+    bottom: 0;
 }
-
 .state1
 {	
 	display: none;
