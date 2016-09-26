@@ -5,7 +5,7 @@ body{
 }
 
 .left{
-	background: url('/ui/images.jpg');
+	background: url('/ui/madi.png');
 	position: fixed;
 	width: 30%;
 	height: 100%;
@@ -54,7 +54,7 @@ a.button{
 	width: 230px;
 	height: 200px;
 	margin-left: -71.5px;
-	background: url('madi.png') no-repeat 0 0;
+	background: url('/ui/madi.png') no-repeat 0 0;
 	transition: bottom 1000ms;
 }
 
