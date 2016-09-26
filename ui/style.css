@@ -1,22 +1,111 @@
-body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+body{
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif,helvetica, arial;
 }
 
-.center {
-    text-align: center;
+.left{
+	background: url('/ui/images.jpg');
+	position: fixed;
+	width: 30%;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
 
-.text-big {
-    font-size: 300%;
+.interface{
+	text-align: center;
+	padding: 20px;
 }
 
-.bold {
-    font-weight: bold;
+a.button{
+	display: inline-block;
+	background-color: white;
+	color: red;
+	padding: 15px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 10px;
+
 }
 
-.img-medium {
-    height: 200px;
+.right{
+	background-color: aqua;
+	position: fixed;
+	width: 70%;
+	height: 100%;
+	top: 0;
+	right: 0;
 }
 
+.ground{
+	background: url('/ui/madi.png');
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+}
+
+.rocket{
+	position: absolute;
+	left: 50%;
+	bottom: -9px;
+	width: 230px;
+	height: 200px;
+	margin-left: -71.5px;
+	background: url('madi.png') no-repeat 0 0;
+	transition: bottom 1000ms;
+}
+
+body.body-state1 .rocket{
+	transition: none;
+}
+body.body-state2 .rocket{
+
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+	bottom: 1000px;
+	
+}
+body.body-state5 .rocket{
+
+}
+
+.state1
+{	
+	display: none;
+}
+.state2
+{	
+	display: none;
+}
+.state3
+{	
+	display: none;
+}
+.state4
+{	
+	display: none;
+}
+.state5
+{	
+	display: none;
+}
+
+body.body-state1 .state1{display: block;}
+body.body-state2 .state2{display: block;}
+body.body-state3 .state3{display: block;}
+body.body-state4 .state4{display: block;}
+body.body-state5 .state5{display: block;}
+
+
+a{
+
+}
+
+a.button{
+
+}
