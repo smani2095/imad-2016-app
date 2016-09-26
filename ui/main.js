@@ -1,5 +1,5 @@
 var timer = null;
-var countdownNumber = 10
+var countdownNumber = 10;
 var changeState = function (state) {
 	document.body.className = 'body-state'+state;
 	clearInterval(timer);
@@ -13,7 +13,7 @@ var changeState = function (state) {
 			if (countdownNumber <= 0) {
 				clearInterval(timer);
 				changeState(3);
-			};
+			}
 		}, 100);
 		
 	} else if (state == 3) {
@@ -21,7 +21,7 @@ var changeState = function (state) {
 		{
 			var randomNumber = Math.round(Math.random()*10);
 
-			console.log('randomNumber:',randomNumber)
+			console.log('randomNumber:',randomNumber);
 
 			if (randomNumber >= 3){
 				changeState(4);
@@ -29,5 +29,5 @@ var changeState = function (state) {
 				changeState(5);
 			}
 	}, 2000);
-};
 }
+};
