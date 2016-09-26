@@ -1,17 +1,35 @@
 <!doctype html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! Everyone.
-        </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+<head>
+	<title>Luck Test</title>
+	<link rel="stylesheet" type ="text/css" href="luck.css">
+	<script type="text/javascript" src="/ui/luck.js"></script>
+</head>
+<body class="body-state1">
+<div class="left">
+<div class="interface state1">
+<h1>Test Your Luck</h1>
+<a href="#" class="button" onclick="changeState(2);">Initialize</a>
+</div>
+<div class="interface state2">
+<h1 id="countdown">10</h1>
+<a href="#" onclick="changeState(1);">Abort!</a>
+</div>
+<div class="interface state3">
+<h1>Analizing</h1>
+</div>
+<div class="interface state4">
+<h1>Your very Lucky</h1>
+<a href="#" class="button" onclick="changeState(1);">Do It Again...</a>
+</div>
+<div class="interface state5">
+<h1>You got some bad luck</h1>
+<a href="#" class="button" onclick="changeState(1);">Try Again...</a>
+</div>
+</div>
+<div class="right">
+<div class="ground"></div>
+<div class="rocket"></div>
+</div>
+</body>
 </html>
